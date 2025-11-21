@@ -40,7 +40,7 @@
     "customEditors": [
       {
         "viewType": "example.fileNotFound",
-        "displayName": "File Not Found Example",
+        "displayName": "File Not Found Example Editor",
         "selector": [
           {
             "filenamePattern": "*.fnf"
