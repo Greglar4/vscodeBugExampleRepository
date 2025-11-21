@@ -12,4 +12,4 @@
 10. Run the extension in the development host (e.g. by using F5)
 11. Close the editor of the file that was deleted in step 8.
 12. Create a .fnf file with the same name as the file created in step 5.
-13. Try to open the file created in step 11 with the File Not Found Example Editor, it will give a file not found error, even though this file now exists.
+13. Try to open the file created in step 12 with the File Not Found Example Editor, it will give a file not found error, even though this file now exists, and that the text editor can open the file fine.
