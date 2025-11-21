@@ -48,6 +48,7 @@ const ctx = await esbuild.context({
 const reactctx = await esbuild.context({
 	entryPoints: [
 		'src/custom-view-app.tsx',
+		'src/file-not-found-app.tsx'
 	],
 	outdir: 'out',
 	bundle: true,

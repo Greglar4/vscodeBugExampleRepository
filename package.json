@@ -36,7 +36,19 @@
           "icon": "icons/green_plus_sign.png"
         }
       ]
-    }
+    },
+    "customEditors": [
+      {
+        "viewType": "example.fileNotFound",
+        "displayName": "File Not Found Example",
+        "selector": [
+          {
+            "filenamePattern": "*.fnf"
+          }
+        ],
+        "priority": "option"
+      }
+    ]
   },
   "scripts": {
     "compile": "tsc -p ./",
@@ -46,7 +58,7 @@
     "test": "vscode-test",
     "build": "tsc -b tsconfig.json && node esbuild.mjs",
     "vscode:prepublish": "tsc -b tsconfig.json && node esbuild.mjs --minify",
-		"vscode:package": "npm run vscode:prepublish && vsce package --no-dependencies --allow-missing-repository --skip-license"
+    "vscode:package": "npm run vscode:prepublish && vsce package --no-dependencies --allow-missing-repository --skip-license"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
@@ -54,6 +66,7 @@
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "@types/vscode": "^1.100.0",
+    "@types/vscode-webview": "^1.57.5",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",
     "@vscode/test-cli": "^0.0.10",
